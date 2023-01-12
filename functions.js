@@ -3,32 +3,11 @@ export function myFunction() {
 }
 // This function should take a string and add return an new string that adds three exclamation points to the argument.
 
-/* 
-Input:
-
-'bunny rabbit'
-
-Output: 
-
-'bunny rabbit!!!'
-
-*/
-
 export function addExclamationPoints(someString) {
     return someString + '!!!';
 }
 
 // This function should take in a number and multiply it by seven
-
-/* 
-Input:
-
-4
-
-Output: 
-
-28 
-*/
 
 export function multiplyBySeven(someNumber) {
     return Number(someNumber) * 7;
@@ -36,48 +15,17 @@ export function multiplyBySeven(someNumber) {
 
 // This function should take in a number and multiply it by twelve then cut the result in half
 
-/* 
-Input:
-
-4
-
-Output: 
-
-24
-
-*/
-
 export function multiplyBy12ThenHalve(someNumber) {
     return (Number(someNumber) * 12) / 2;
 }
 
 // This function should take in three numbers, divide the first by the second, then multiply the result by the third
 
-/* 
-Input:
-
-8, 4, 5
-
-Output: 
-
-10 (because 8 divided by 4 is 2, times 5 is 10)
-*/
-
 export function divideThenMultiply(firstNumber, secondNumber, thirdNumber) {
     return Number((firstNumber / secondNumber) * thirdNumber);
 }
 
 // This function should take in three numbers and return those numbers in an array
-
-/* 
-Input:
-
-8, 4, 5
-
-Output: 
-
-[8, 4, 5]
-*/
 
 export function returnAsAnArray(firstNumber, secondNumber, thirdNumber) {
     const array = [firstNumber, secondNumber, thirdNumber];
@@ -86,31 +34,11 @@ export function returnAsAnArray(firstNumber, secondNumber, thirdNumber) {
 
 // This function should take in three numbers and return those numbers mushed together as a string
 
-/* 
-Input:
-
-8, 4, 5
-
-Output: 
-
-'845'
-*/
-
 export function returnAsAString(firstNumber, secondNumber, thirdNumber) {
     return `${firstNumber}${secondNumber}${thirdNumber}`;
 }
 
 // This function should take in two numbers and return a greeting announcing that the sum of those numbers is today's lucky number
-
-/* 
-Input:
-
-8, 4
-
-Output: 
-
-'Hello! Your lucky number for the day is 12.'
-*/
 
 export function makeLuckyGreeting(firstNumber, secondNumber) {
     return `Hello! Your lucky number for the day is ${firstNumber}${secondNumber}.`;
@@ -118,39 +46,18 @@ export function makeLuckyGreeting(firstNumber, secondNumber) {
 
 // This function should take an array and return the second item in the array
 
-/* 
-Input:
-
-['kiwi', 'apple', 'orange', 'plum']
-
-Output: 
-
-'apple'
-
-*/
-
 export function getSecondItem(array) {
     return array[1];
 }
 
 // This function should take an array and return the LAST item in the array, no matter the array's length
 
-/* 
-Input:
-
-['kiwi', 'apple', 'orange', 'plum']
-
-Output: 
-
-'plum'
-
-*/
+export function getLastItem(array) {
+    const lastItem = array.length - 1;
+    return array[lastItem];
+}
 
 // STRETCH GOALS BELOW
-
-export function getLastItem(array) {
-    return true;
-}
 
 // This function should take a dog object and return an <li> with the name of the dog
 /* 

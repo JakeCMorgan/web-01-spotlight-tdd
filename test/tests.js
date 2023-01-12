@@ -2,6 +2,7 @@
 import {
     addExclamationPoints,
     divideThenMultiply,
+    getLastItem,
     getSecondItem,
     makeLuckyGreeting,
     multiplyBy12ThenHalve,
@@ -187,4 +188,24 @@ test('should take an array and return the second item in the array', (expect) =>
     const actual3 = getSecondItem(['blue', 'green', 'yellow', 'red']);
 
     expect.deepEqual(actual3, expected3, 'green');
+});
+
+test('should take an array and return the LAST item in the array, no matter the arrays length', (expect) => {
+    const expected = 'plum';
+
+    const actual = getLastItem(['kiwi', 'apple', 'orange', 'plum']);
+
+    expect.deepEqual(actual, expected, 'plum');
+
+    const expected2 = '4';
+
+    const actual2 = getLastItem(['1', '2', '3', '4']);
+
+    expect.deepEqual(actual2, expected2, '4');
+
+    const expected3 = 'red';
+
+    const actual3 = getLastItem(['blue', 'green', 'yellow', 'red']);
+
+    expect.deepEqual(actual3, expected3, 'red');
 });
